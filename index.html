@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loop · Authority | Auger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23000'/%3E%3C/svg%3E">
+</head>
+<body>
+<aside class="rail" aria-label="Primary">
+  <a class="rail-logo" title="Auger" href="#">
+    <svg viewBox="0 0 40 40" width="38" height="38" aria-hidden="true">
+      <circle cx="20" cy="20" r="20" fill="#000"/><path d="M20 8.2c5.6 0 7.4 5.6 0 11.8s-5.6 11.8 0 11.8 7.4-5.6 0-11.8-5.6-11.8 0-11.8z" fill="none" stroke="#fff" stroke-width="3.3" stroke-linejoin="round"/></svg>
+  </a>
+  <a class="rail-btn active" title="Loop" href="#"><i data-lucide="infinity"></i></a>
+  <a class="rail-btn" title="Performance" href="#"><i data-lucide="gauge"></i></a>
+  <span class="rail-sep"></span>
+  <a class="rail-btn" title="Network" href="#"><i data-lucide="waypoints"></i></a>
+  <a class="rail-btn" title="Global view" href="#"><i data-lucide="globe"></i></a>
+  <a class="rail-btn" title="Analytics" href="#"><i data-lucide="signal"></i></a>
+  <a class="rail-btn" title="Scenarios" href="#"><i data-lucide="scan"></i></a>
+  <span class="rail-sep"></span>
+  <span class="rail-dot"></span>
+  <a class="rail-btn" title="Agents" href="#"><i data-lucide="scan-face"></i></a>
+  <span class="rail-ring"></span>
+  <a class="rail-btn" title="Settings" href="#"><i data-lucide="settings"></i></a>
+  <a class="rail-btn" title="Profile" href="#"><i data-lucide="user-round"></i></a>
+</aside>
+
+<div class="main" id="top">
+  <header class="topbar">
+    <div class="tb-left">
+      <span class="tb-title">Loop</span>
+      <div class="view-pill" id="viewPill">
+        <button type="button" id="viewBtn" aria-haspopup="true" aria-expanded="false">Authority <i data-lucide="chevron-down"></i></button>
+        <div class="view-menu" id="viewMenu" role="menu">
+          <span role="menuitem" class="muted">Overview</span>
+          <span role="menuitem" class="muted">Actions</span>
+          <span role="menuitem" class="muted">Notifications</span>
+          <span role="menuitem" class="on">Authority <em>New</em></span>
+        </div>
+      </div>
+    </div>
+    <svg class="wordmark" viewBox="0 0 664 259" aria-label="Auger"><path d="M317.024 244.031V259L409.499 214.694C417.315 210.946 422.272 204.19 422.272 194.542V179.573L329.796 223.879C321.981 227.627 317.024 234.383 317.024 244.031Z" fill="white"/><path d="M67.5523 0L0 179.376H29.4417L44.4278 136.227H120.349L135.335 179.376H165.791L97.7549 0H67.5523ZM52.8199 112.905L82.2847 25.612H82.7919L112.487 112.905H52.8199Z" fill="white"/><path d="M512.129 47.4228C472.52 47.4228 448.15 75.0245 448.15 115.143C448.15 154.29 470.998 183.141 512.129 183.141C546.159 183.141 565.202 164.562 572.05 139.991H546.666C544.383 148.529 535.507 163.058 512.636 163.058C486.975 163.058 474.295 143.23 473.788 121.922H573.318C573.571 119.909 573.571 116.161 573.571 112.644C573.571 73.0116 551.484 47.4228 512.129 47.4228ZM473.788 102.603C475.309 81.5258 490.549 67.482 511.368 67.482C533.455 67.482 547.68 82.5438 547.68 102.603H473.788Z" fill="white"/><path d="M652.057 48.4204C634.535 48.4204 624.137 59.711 617.267 75.7676H616.759V51.4281H591.883V179.372H616.759V113.156C616.759 88.8165 633.013 72.0195 655.608 72.0195C658.651 72.0195 660.934 72.274 664 72.783V49.2071C660.196 48.6749 656.645 48.4204 652.057 48.4204Z" fill="white"/><path d="M405.138 64.863C395.316 54.8219 381.252 47.5339 365.713 47.5339C325.089 47.5339 300.72 75.6214 300.72 115.509C300.72 155.65 325.09 183.252 365.483 183.252C405.876 183.252 430.222 155.396 430.222 115.277V51.5365H405.161V64.863H405.138ZM365.69 162.938C338.784 162.938 326.588 142.115 326.588 115.532C326.588 88.6935 338.784 68.1253 365.69 68.1253C392.112 68.1253 404.285 88.6935 404.285 115.532C404.308 142.115 392.112 162.938 365.69 162.938Z" fill="white"/><path d="M257.843 131.923C257.843 151.242 246.477 162.162 227.687 162.162C208.897 162.162 197.53 153.972 197.53 132.617V51.5241H172.654V136.041C172.654 165.378 191.006 182.985 223.076 182.985C240.045 182.985 251.48 175.095 257.866 164.73V179.353H282.743V51.5241H257.866V131.923H257.843Z" fill="white"/></svg>
+    <div class="tb-right">
+      <button type="button" class="tb-icon" title="Help"><i data-lucide="circle-help"></i></button>
+      <button type="button" class="tb-icon" title="Settings"><i data-lucide="settings"></i></button>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div>
+      <h1>Authority</h1>
+      <p>Review limits Auger has earned, track expected vs actual, and monitor what runs on its own</p>
+    </div>
+    <div class="controls">
+      <label class="pill-select"><span>Miss</span>
+        <select id="tau">
+          <option value="0.15">actual &lt; 85% of expected</option>
+          <option value="0.25" selected>actual &lt; 75% of expected</option>
+          <option value="0.4">actual &lt; 60% of expected</option>
+        </select><i data-lucide="chevron-down"></i></label>
+      <label class="pill-select"><span>Target</span>
+        <select id="alpha">
+          <option value="0.03">3% misses</option>
+          <option value="0.05" selected>5% misses</option>
+          <option value="0.08">8% misses</option>
+        </select><i data-lucide="chevron-down"></i></label>
+      <label class="pill-select"><span>Confidence</span>
+        <select id="delta">
+          <option value="0.1">90%</option>
+          <option value="0.05" selected>95%</option>
+          <option value="0.01">99%</option>
+        </select><i data-lucide="chevron-down"></i></label>
+      <label class="pill-select"><span>Rejected</span>
+        <select id="rej">
+          <option value="worst" selected>count as misses</option>
+          <option value="ignore">exclude (not certified)</option>
+        </select><i data-lucide="chevron-down"></i></label>
+    </div>
+  </section>
+
+  <section class="panel impact" id="impact"></section>
+
+  <div class="notif-head"><a href="#cards">See all limit changes</a></div>
+  <div class="notifs" id="notifs"></div>
+
+  <section class="actions-head">
+    <h2 id="actionsTitle"></h2>
+    <p>Proposed authority changes requiring your review and approval</p>
+  </section>
+
+  <section class="panel outer" id="cards">
+    <div class="banner" id="banner"></div>
+    <div id="cardList"></div>
+  </section>
+
+  <section class="actions-head">
+    <h2>Method check</h2>
+    <p>Does the certified rule keep its promise? Re-simulate the record and compare against the simulator's true miss rates</p>
+  </section>
+  <section class="panel method" id="method"></section>
+
+  <footer class="foot">Unofficial concept demo by Mohith Gajjela. Not affiliated with Auger. Synthetic data.</footer>
+</div>
+
+<div class="scroll-btns">
+  <a href="#top" title="Top"><i data-lucide="chevron-up"></i></a>
+  <a href="#method" title="Bottom"><i data-lucide="chevron-down"></i></a>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
