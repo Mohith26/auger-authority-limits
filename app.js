@@ -201,7 +201,7 @@ function tableHTML(r) {
   const p = state.p, ti = r.ti, sel = state.sel[ti];
   const rows = r.cert.buckets.map((b, k) => {
     const on = b.certified && b.hi <= sel;
-    const cb = b.certified ? `<span class="cb ${on ? 'on' : 'off'}" data-cb="${ti}" data-k="${k}"></span>` : `<span class="cb off" style="opacity:.35"></span>`;
+    const cb = b.certified && r.action === 'widen' ? `<span class="cb ${on ? 'on' : 'off'}" data-cb="${ti}" data-k="${k}"></span>` : b.certified ? `<span class="cb off"></span>` : `<span class="cb off" style="opacity:.35"></span>`;
     let res;
     if (b.certified) res = `<span class="res ok">Certified</span>`;
     else if (k === r.cert.stopIdx) res = b.rate != null && b.rate > p.alpha ? `<span class="res no">Over target</span>` : `<span class="res no">Stop · +${num(A.evidenceNeeded(b, p.alpha, p.delta) ?? 0)} needed</span>`;
